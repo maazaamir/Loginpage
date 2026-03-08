@@ -1,0 +1,110 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f1f5f9;
+}
+
+.container{
+display:flex;
+width:900px;
+height:500px;
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+border-radius:12px;
+overflow:hidden;
+}
+
+/* LEFT SIDE */
+
+.left{
+flex:1;
+background:linear-gradient(135deg,#6366f1,#38bdf8);
+color:white;
+padding:60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.left h1{
+font-size:36px;
+margin-bottom:15px;
+}
+
+.left p{
+font-size:15px;
+line-height:1.5;
+}
+
+/* RIGHT SIDE */
+
+.right{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+background:white;
+}
+
+.login-box{
+width:70%;
+}
+
+.login-box h2{
+margin-bottom:20px;
+}
+
+.login-box input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:14px;
+}
+
+.login-box button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#6366f1;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-box button:hover{
+background:#4f46e5;
+}
+
+#message{
+margin-top:12px;
+font-size:14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.container{
+flex-direction:column;
+width:90%;
+height:auto;
+}
+
+.left{
+padding:40px;
+text-align:center;
+}
+
+}
